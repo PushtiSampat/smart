@@ -433,17 +433,6 @@ function demoPop() {
             isfullbtn.disabled = false;
             return;
         }
-        // canvasCmp_arrow(ctx,522,stckElmnt[Top].Y+(30/2),600,stckElmnt[Top].Y+(30/2));
-        // ctx.stroke();
-        //  ctx.font="15px Georgia";
-        // ctx.fillText("Top",605,stckElmnt[Top].Y+(30/2)+5); 
-        //canvasCmp_arrow(ctx,stack.rightX+5,stp+(30/2),stack.rightX+78,stp+(30/2));
-        // canvasCmp_arrow1(ctx,stack.rightX+5,stp+(30/2),stack.rightX+78,stp+(30/2));
-        /*   ctx.stroke();
-          ctx.font="15px Georgia";
-          ctx.fillText("Top",stack.rightX+80,stckElmnt[Top].Y+(30/2)+5);  */
-        //ctx.clearRect(250,0,350,93);
-        // ctx.clearRect(100,0,740,115);
         if (canvasCmp.width() > 550)
             instruction = "Current Top index is " + Top + " which will be used for Pop. <br/>" +
                 "So index " + (Top) + " value will be popped from stack <br/>";
@@ -1266,7 +1255,10 @@ function demoNext() {
                 document.getElementById("Observation").style.display = "block";
                 document.getElementById("instructions").style.display = "block";
                 stack.myStack('red');
+                recalculateStackElementPoints();
+                myArray();
                 basicoperation();
+                writeTop();
                 ++next;
                 break;
         }
