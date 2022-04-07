@@ -15,12 +15,18 @@
 .text-center {
     text-align: center;
 }
+#instructions{
+    height:6rem;    
+    margin:auto;
+    width: 80%; 
+    display: none;
+}
 .canvas {
     left: 0;
     right: 0;
     z-index: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
+ 
 }
 @media only screen and (min-width: 1000px) {
     .stack-info{
@@ -36,6 +42,10 @@
     }
     .img_space{
         margin-left: 4rem;
+    }
+    .canvas{
+        margin-left: 12rem;
+
     }
   }
  
