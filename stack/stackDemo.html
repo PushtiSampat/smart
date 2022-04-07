@@ -81,7 +81,7 @@
   </header>
   <Center>
     <h1>Stack</h1>
-    <div class="text-center" style="width: 100%; height: 45px; clear:both;">
+    <div class="text-center custom-btns" style="width: 100%; height: 45px; clear:both;">
       <input id="nextbutton" type="button" value="Start" onclick="startStackDemo()" />
       <input id="pushbutton" type="button" value="Push" onclick="demoPush()" />
       <input id="popbutton" type="button" value="Pop" onclick="demoPop()" />
@@ -93,9 +93,9 @@
 
 
     <div class="text-center" style="margin: 0;">
-      <h5 id="Observation" style=" font-weight: 700;font-size: 1.25rem; margin: 0 0 0 0; display: none;">Observation
+      <h5 id="Observation" style=" font-weight: 700;font-size: 1.25rem; margin:0 0 0 0; display:none;">Observation
       </h5>
-      <div align="center"  id="instructions" style="">
+      <div align="center"  id="instructions">
       </div>
       <div style="margin:0">
         <canvas id="canvas" class="canvas text-center" style="display:none;"> </canvas>
@@ -103,7 +103,7 @@
     </div>
 
   </Center>
-  <div id="firstinstruction" align="center">
+  <div id="firstinstruction" align="center" style="margin-top: 100px">
     Click on Start button to start the demonstration
   </div>
   <div class="hidden" id="firstpg_aboveImage">
