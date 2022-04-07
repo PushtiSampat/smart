@@ -349,8 +349,8 @@ async function singleElementDeleteStack(stckElmnt: element[], cnt: number) {
 
     let stoppop = Math.floor((canvasCmp.height() * 0.9) - 60)
     stoppop % 2 == 0 ? stoppop : stoppop += 1;
-   // console.log("A:" +stckElmnt[Top].Y  + " b:" + stoppop)
-    if ((stckElmnt[Top].X == 2 || stckElmnt[Top].X == 2 + 1) && stckElmnt[Top].Y == stoppop) {
+    console.log("A:" +stckElmnt[Top].Y  + " b:" + stoppop)
+    if ((stckElmnt[Top].X == 2 || stckElmnt[Top].X == 2 + 1) && (stckElmnt[Top].Y == stoppop|| stckElmnt[Top].Y+1 == stoppop)) {
         if (canvasCmp.width() > 550) {
             popElmnt[++popArrIndex] = new element(ctx, canvasCmp, gap, canvasCmp.height() * 0.88, 50, 30, stckElmnt[Top].data);
             gap += 80
