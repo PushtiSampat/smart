@@ -60,9 +60,15 @@
     }
     
     .custom-btns{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;;
-        margin: 1rem 0;
+        /* display: flex;
+        flex-wrap: wrap; */
+        /* justify-content: flex-start;
+        align-items: flex-start; */
+        /* margin: 1rem 0; */
+        grid-column-start: 1;
+        grid-column-end: 4;  
+        
+        grid-row-start: 1;
+        grid-row-start: 2;
     }
   }
